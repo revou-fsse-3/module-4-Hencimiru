@@ -1,5 +1,5 @@
 
-import { Button, Input, Text } from "../../components"
+import { Button, Input, Text, Card } from "../../components"
 import {useFormik} from "formik";
 import * as yup from"yup";
 
@@ -23,7 +23,7 @@ const HomeContainer = () => {
     });
 
     return (
-        <>
+        <Card border>
             <form onSubmit={forMik.handleSubmit} >
                 <div>
                     <Text>{'Name'}</Text>
@@ -58,7 +58,7 @@ const HomeContainer = () => {
                     <Input className="border-solid border-2 border-yellow-950" 
                     name="dob"
                     value={forMik.values.birth}
-                    onChange={forMik.handleChange("dob")}
+                    onChange={forMik.handleChange("birth")}
                     />
 
                     {
@@ -70,7 +70,7 @@ const HomeContainer = () => {
                 <Button label={"Submit"} type={"submit"} className="bg-green-400 opacity-100 mt-5"/>
             </form>
 
-        </>
+        </Card>
     )
 }
 
