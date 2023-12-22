@@ -1,7 +1,11 @@
-const Input = () => {
+import { InputHTMLAttributes } from "react"
+
+type InputProps = InputHTMLAttributes<HTMLInputElement>
+
+const Input = (props: InputProps) => {
     
     return(
-        <Input />
+        <input type="text" {...props}/>
     )
 }
 
