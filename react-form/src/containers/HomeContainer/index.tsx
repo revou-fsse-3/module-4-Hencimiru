@@ -1,17 +1,18 @@
 
-import { Button, Input, Text, Card } from "../../components"
 import { useFormik } from "formik";
+import { Button, Input, Text, Card } from "../../components"
 import { useState } from "react";
 import * as yup from"yup";
 
 
 const HomeContainer = () => {
     const [step, setStep] = useState<number>(1);
-
+    
     const handleNext = () => {
         if (step === 3){
             return;
         }
+        console.log("Is Valid", forMik.isValid)
         setStep((prevState) => prevState + 1);
     };
 
@@ -19,9 +20,9 @@ const HomeContainer = () => {
         if (step === 1) {
             return;
         }
+        console.log("Is Valid", forMik.isValid)
         setStep((prevState)=> prevState - 1)
     }
-
     const forMik = useFormik({
         initialValues: {
             name:"",
@@ -34,16 +35,18 @@ const HomeContainer = () => {
             username:"",
             password:"",
         },
-
         
         onSubmit: (values, { resetForm }) => {
             console.log(values);
-            resetForm(),
+            resetForm();
+            setStep(1)
             alert("Registration successful!")
-        },
-        validationSchema: yup.object({
-            name: yup.string().required(),
-            email: yup.string().email('Invalid email format, ex: henci@gmail.com').required('Email is required'),
+        
+    },
+    validationSchema: 
+            yup.object({
+            name: yup.string().required('Please enter your name'),
+            email: yup.string().email('Invalid email format, ex: henci@gmail.com').required('Please enter your email'),
             birth: yup.date().max(new Date(),'Please enter your date of birth').required('Date of Birth is required, ex: 12-10-1998'),
             address: yup.string().required('Please enter your address.'),
             city: yup.string().min(4,'"Invalid city name. Please enter a valid city.').required('Please enter your city'),
