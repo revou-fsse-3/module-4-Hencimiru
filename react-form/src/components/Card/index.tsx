@@ -1,18 +1,18 @@
 import { ReactNode } from "react";
 
-interface Props extends React.HTMLAttributes<HTMLDivElement> {
+interface Props{
     border: boolean;
     children: ReactNode;
 }
 
+const Card = ({border, children} : Props) => {
 
-const Card = ({ border, children, ...props } : Props) => {
-
-    return (
-        <div className={`${border && 'w-96 bg-teal-200	 rounded border-emerald-700 border shadow-md'} p-8 ${props.className}`}>
+    return(
+        <div className={`${border && 'border && w-96 bg-teal-200 rounded border-emerald-700 border shadow-md'} p-8`}>
             {children}
         </div>
     )
-}
+        
+}    
 
 export default Card
