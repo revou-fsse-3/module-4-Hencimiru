@@ -160,7 +160,7 @@ const HomeContainer = () => {
                     <Text>{'Password'}</Text>
                     <Input
                         className="border-solid border-2 border-yellow-950"
-                        name="password"
+                        type="password"
                         value={forMik.values.password}
                         onChange={forMik.handleChange('password')}
                     />
