@@ -166,8 +166,9 @@ const HomeContainer = () => {
             </div>
             )}
             <div className="flex justify-center">
-                {step > 1 && <Button label={'Previous'} onClick={handlePrevious} />}
-                {step === 3 ? (<Button label={'Submit'} type="submit" />) : (<Button label={'Next'} onClick={handleNext} />)}
+                {step > 1 && <Button label={'Previous'} onClick={handlePrevious}/>}
+                {step === 3 ? (<Button label={'Submit'} type="submit" />) : (<Button label={'Next'} onClick={handleNext} />
+                )}
             </div>
         </form>
         </Card>
