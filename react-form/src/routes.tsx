@@ -1,6 +1,5 @@
 import "./App.css";
 import {
-  BrowserRouter as Router,
   createBrowserRouter,
 } from "react-router-dom";
 import Login from "./containers/Login/login";
@@ -8,7 +7,7 @@ import Register from "./containers/Register/register";
 import Layout from "./components/Layout/layout";
 import Category from "./containers/Category/listcategory";
 import FormCategory from "./containers/Category/formcategory";
-import CreateCategory from "./containers/Category/createcategory";
+// import CreateCategory from "./containers/Category/createcategory";
 import Milestone4 from "./containers/Milestone4/"
 const router = createBrowserRouter([
   {
@@ -31,10 +30,10 @@ const router = createBrowserRouter([
         path: "formcategory",
         element: <FormCategory />,
       },
-      {
-        path: "createcategory",
-        element: <CreateCategory />,
-      },
+      // {
+      //   path: "createcategory",
+      //   element: <CreateCategory />,
+      // },
       {
         path: "milestone4",
         element: <Milestone4 />,
