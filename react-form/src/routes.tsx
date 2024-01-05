@@ -1,8 +1,6 @@
 import "./App.css";
 import {
   BrowserRouter as Router,
-  Routes,
-  Route,
   createBrowserRouter,
 } from "react-router-dom";
 import Login from "./containers/Login/login";

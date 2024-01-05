@@ -1,5 +1,4 @@
 import { useFormik } from "formik";
-import React from "react";
 import * as yup from "yup";
 import { Button, Input, Text } from "../../components";
 import toast from "react-hot-toast";
