@@ -23,15 +23,15 @@ const Navbar = () => {
                     </button>
                 </div>
                 <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                    <div className="flex flex-shrink-0 items-center">
+                    {/* <div className="flex flex-shrink-0 items-center">
                         <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company"/>
-                    </div>
+                    </div> */}
                     <div className="hidden sm:ml-6 sm:block">
                     <div className="flex space-x-4">
-                        <button onClick={() => navigate('/')} className="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Login</button>
-                        <button onClick={() => navigate('/register')} className="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Register</button>
-                        <button onClick={() => navigate('/category')} className="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Category</button>
-                        <button onClick={() => navigate('/milestone4')} className="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Multiple Form</button>
+                        <button onClick={() => navigate('/')} className="bg-stone-500 hover:bg-stone-800 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Login</button>
+                        <button onClick={() => navigate('/register')} className="bg-stone-500	hover:bg-stone-800 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Register</button>
+                        <button onClick={() => navigate('/category')} className="bg-stone-500	hover:bg-stone-800 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Category</button>
+                        <button onClick={() => navigate('/milestone4')} className="bg-stone-500	hover:bg-stone-800 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page">Multiple Form</button>
                     </div>
                     </div>
                 </div>
