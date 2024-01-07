@@ -1,5 +1,4 @@
 import { ReactNode, createContext, useState } from "react";
-import axios from "axios";
 
 export type ContextType = {
     open: boolean;

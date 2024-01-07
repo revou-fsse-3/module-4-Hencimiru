@@ -2,7 +2,6 @@ import { useFormik } from "formik";
 import * as yup from "yup";
 import { Button, Input, Text } from "../../components";
 import toast from "react-hot-toast";
-import { NavLink } from "react-router-dom";
 
 const register = () => {
   const forMik1 = useFormik({
