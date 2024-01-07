@@ -28,7 +28,7 @@ const Login = () => {
         const data = await response.json();
         localStorage.setItem("token", data.data.token);
         toast.success("Login Succes");
-        go("/category");
+        go("/listcategory");
       } else {
         toast.error("Login Error");
       }

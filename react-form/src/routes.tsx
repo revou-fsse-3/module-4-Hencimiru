@@ -1,14 +1,13 @@
 import "./App.css";
-import {
-  createBrowserRouter,
-} from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import Login from "./containers/Login/login";
 import Register from "./containers/Register/register";
 import Layout from "./components/Layout/layout";
-import Category from "./containers/Category/listcategory";
-import FormCategory from "./containers/Category/formcategory";
-// import CreateCategory from "./containers/Category/createcategory";
-import Milestone4 from "./containers/Milestone4/"
+import Add from "./containers/Category/Add/addcategory";
+import Milestone4 from "./containers/Milestone4/";
+import Edit from "./containers/Category/Edit/editcategory";
+import List from "./containers/Category/List/listcategory";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -23,17 +22,17 @@ const router = createBrowserRouter([
         element: <Register />,
       },
       {
-        path: "category",
-        element: <Category />,
+        path: "editcategory",
+        element: <Edit />,
       },
       {
-        path: "formcategory",
-        element: <FormCategory />,
+        path: "addcategory",
+        element: <Add />,
       },
-      // {
-      //   path: "createcategory",
-      //   element: <CreateCategory />,
-      // },
+      {
+        path: "listcategory",
+        element: <List />,
+      },
       {
         path: "milestone4",
         element: <Milestone4 />,

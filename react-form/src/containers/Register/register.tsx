@@ -86,12 +86,7 @@ const register = () => {
         </div>
       </div>
       <div className="flex justify-center">{<Button label={"Register"} />}
-      <NavLink
-          className="bg-blue-700 hover:bg-blue-900 text-white font-bold py-1 px-2 my-2 mx-3 "
-          to="/"
-        >
-          Login
-        </NavLink></div>
+  </div>
     </form>
   );
 };
